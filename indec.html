@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <title>Compra de Tickets</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Compra de Tickets</h1>
+        <form id="ticketForm">
+            <label for="tipoViaje">Tipo de viaje:</label>
+            <select id="tipoViaje" name="tipoViaje">
+                <option value="ida">Solo Ida</option>
+                <option value="idavuelta">Ida y Vuelta</option>
+            </select>
+
+            <label for="origen">Ciudad de Origen:</label>
+            <input type="text" id="origen" name="origen" placeholder="Ciudad de Origen">
+
+            <label for="destino">Ciudad de Destino:</label>
+            <input type="text" id="destino" name="destino" placeholder="Ciudad de Destino">
+
+            <label for="fechaIda">Fecha de Ida: </label>
+            <input type="date" id="fechaIda" name="fechaIda" min="">
+            <span id="fechaIdaFormatted"></span>
+            <br>
+            <label for="fechaVuelta">Fecha de Vuelta: </label>
+            <input type="date" id="fechaVuelta" name="fechaVuelta" disabled min="">
+            <span id="fechaVueltaFormatted"></span>
+
+
+            <label for="pasajeros">Cantidad de Pasajeros:</label>
+            <input type="number" id="pasajeros" name="pasajeros" min="1" value="1">
+
+            <label for="clase">Clase:</label>
+            <select id="clase" name="clase">
+                <option value="economica">Económica</option>
+                <option value="business">Business Class</option>
+                <option value="primera">Primera Clase</option>
+            </select>
+
+            <button type="button" id="buscarVuelos">Buscar Vuelos</button>
+        </form>
+
+        <div id="opcionesVuelos" class="oculto">
+            <h2>Opciones de Vuelos</h2>
+            <div id="resultados"></div>
+        </div>
+    </div>
+    <script src="JS/config.js"></script>
+</body>
+</html>
