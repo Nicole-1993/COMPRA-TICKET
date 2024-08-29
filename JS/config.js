@@ -4,7 +4,7 @@ document.getElementById('tipoViaje').addEventListener('change', function() {
         fechaVuelta.disabled = false;
     } else {
         fechaVuelta.disabled = true;
-        fechaVuelta.value = ''; // Limpia la fecha de vuelta si se desactiva
+        fechaVuelta.value = ''; 
     }
 });
 
@@ -14,9 +14,9 @@ document.getElementById('buscarVuelos').addEventListener('click', function() {
     resultados.innerHTML = '';
 
     const vuelos = [
-        { aerolinea: 'Eleven Airline', vuelo: 'FL139', salida: '09:27', llegada: '08:25', origen: 'SANTIAGO', destino: 'ITALIA', precio: '$1200', duracion: '17 h 42 m', img: 'https://via.placeholder.com/50' },
-        { aerolinea: 'Eleven Airline', vuelo: 'FL984', salida: '19:49', llegada: '23:27', origen: 'SANTIAGO', destino: 'ITALIA', precio: '$1500', duracion: '17 h 42 m', img: 'https://via.placeholder.com/50' },
-        { aerolinea: 'Eleven Airline', vuelo: 'FL84', salida: '15:24', llegada: '02:27', origen: 'SANTIAGO', destino: 'ITALIA', precio: '$1000', duracion: '17 h 42 m', img: 'https://via.placeholder.com/50' },
+        { aerolinea: 'Eleven Airline', vuelo: 'FL139', salida: '09:27', llegada: '08:25', origen: 'SANTIAGO', destino: 'ITALIA', precio: '$1200', duracion: '17 h 42 m', img: 'avion.JPG' },
+        { aerolinea: 'Eleven Airline', vuelo: 'FL984', salida: '19:49', llegada: '23:27', origen: 'SANTIAGO', destino: 'ITALIA', precio: '$1500', duracion: '17 h 42 m', img: 'avion.JPG' },
+        { aerolinea: 'Eleven Airline', vuelo: 'FL84', salida: '15:24', llegada: '02:27', origen: 'SANTIAGO', destino: 'ITALIA', precio: '$1000', duracion: '17 h 42 m', img: 'avion.JPG' },
     ];
 
     vuelos.forEach(vuelo => {
@@ -47,15 +47,14 @@ function obtenerFechaActual() {
     const año = hoy.getFullYear();
     const mes = String(hoy.getMonth() + 1).padStart(2, '0');
     const día = String(hoy.getDate()).padStart(2, '0');
-    return `${año}-${mes}-${día}`; // Formato para el input
-}
+    return `${año}-${mes}-${día}`; 
 
 function formatearFecha(fecha) {
     const partes = fecha.split('-');
-    return `${partes[2]}/${partes[1]}/${partes[0]}`; // Formato DD/MM/AAAA
+    return `${partes[2]}/${partes[1]}/${partes[0]}`;
 }
 
-// Establecer la fecha mínima y mostrarla en formato DD/MM/AAAA
+}
 const fechaMinima = obtenerFechaActual();
 document.getElementById('fechaIda').min = fechaMinima;
 document.getElementById('fechaVuelta').min = fechaMinima;
