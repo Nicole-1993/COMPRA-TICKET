@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-
     <title>Compra de Tickets</title>
-
 </head>
 <body>
     <div class="container">
@@ -20,10 +18,54 @@
             </select>
 
             <label for="origen">Ciudad de Origen:</label>
-            <input type="text" id="origen" name="origen" placeholder="Ciudad de Origen">
+            <select id="origen" name="origen">
+                <option value="Santiago de Chile">Santiago de Chile</option>
+                <option value="Francia">Francia</option>
+                <option value="España">España</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="China">China</option>
+                <option value="Italia">Italia</option>
+                <option value="Turquía">Turquía</option>
+                <option value="México">México</option>
+                <option value="Tailandia">Tailandia</option>
+                <option value="Alemania">Alemania</option>
+                <option value="Reino Unido">Reino Unido</option>
+                <option value="Japón">Japón</option>
+                <option value="Australia">Australia</option>
+                <option value="Grecia">Grecia</option>
+                <option value="Canadá">Canadá</option>
+                <option value="Emiratos Árabes Unidos">Emiratos Árabes Unidos</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Egipto">Egipto</option>
+                <option value="Holanda">Holanda</option>
+            </select>
 
             <label for="destino">Ciudad de Destino:</label>
-            <input type="text" id="destino" name="destino" placeholder="Ciudad de Destino">
+            <select id="destino" name="destino">
+                <option value="Santiago de Chile">Santiago de Chile</option>
+                <option value="Francia">Francia</option>
+                <option value="España">España</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="China">China</option>
+                <option value="Italia">Italia</option>
+                <option value="Turquía">Turquía</option>
+                <option value="México">México</option>
+                <option value="Tailandia">Tailandia</option>
+                <option value="Alemania">Alemania</option>
+                <option value="Reino Unido">Reino Unido</option>
+                <option value="Japón">Japón</option>
+                <option value="Australia">Australia</option>
+                <option value="Grecia">Grecia</option>
+                <option value="Canadá">Canadá</option>
+                <option value="Emiratos Árabes Unidos">Emiratos Árabes Unidos</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Egipto">Egipto</option>
+                <option value="Holanda">Holanda</option>
+            </select>
 
             <label for="fechaIda">Fecha de Ida: </label>
             <input type="date" id="fechaIda" name="fechaIda" min="">
@@ -32,7 +74,6 @@
             <label for="fechaVuelta">Fecha de Vuelta: </label>
             <input type="date" id="fechaVuelta" name="fechaVuelta" disabled min="">
             <span id="fechaVueltaFormatted"></span>
-
 
             <label for="pasajeros">Cantidad de Pasajeros:</label>
             <input type="number" id="pasajeros" name="pasajeros" min="1" value="1">

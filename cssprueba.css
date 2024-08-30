@@ -1,0 +1,329 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5f7; /* Cian */
+    margin: 0;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headers */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Labels and Form Elements */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Buttons */
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+/* Hidden Elements */
+.oculto {
+    display: none;
+}
+
+/* Flight Options */
+#opcionesVuelos {
+    margin-top: 20px;
+}
+
+.vuelo {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vuelo img {
+    width: 50px;
+    height: auto;
+}
+
+.vuelo-info {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.vuelo-precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: rgb(16, 0, 79);
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Footer */
+footer {
+    background-color: rgb(16, 0, 79);
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes {
+    margin-bottom: 20px;
+}
+
+footer .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #d01e11;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/* Card Titles and Text */
+.card-title {
+    color: blueviolet;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+}
+
+.card-text {
+    color: rgb(20, 19, 19);
+    font-size: small;
+    text-align: justify;
+}
+
+/* Header */
+header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Link Container */
+.link {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.nav- {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.nav {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #343a40;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+/* Section */
+section {
+    padding: 30px 0;
+    color: #ffffff;
+    margin: 50px;
+    border-bottom: 100%;
+}
+
+/* Destination Styles */
+.destino {
+    color: black;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Righteous';
+    padding: 5px 0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.destino:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+/* Carousel */
+.carousel-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-indicators button {
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: #ffffff;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-caption h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.carousel-caption p {
+    font-size: 16px;
+    color: #f8f9fa;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 20px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+/* Form Container */
+.form-container {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+/* Tabs and Forms */
+.tab-content {
+    margin-top: 1rem;
+}
+
+.form-select,
+.form-control {
+    color: #051B54;
+}
+
+/* Links */
+.compra-link {
+    color: #0099cc;
+    margin-top: 1rem;
+    display: block;
+}
